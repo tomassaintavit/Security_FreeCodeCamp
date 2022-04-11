@@ -10,7 +10,7 @@ app.use(helmet.ieNoOpen());
 app.use(helmet.dnsPrefetchControl());
 app.use(helmet.noCache());
 app.use(helmet.contentSecurityPolicy({directives: {defaultSrc: ["'self'"],
- scriptSrc: ["'self'", 'https://SecurityFreeCodeCamp.tomassaintavit.repl.co']}}));
+ scriptSrc: ["'self'", "https://SecurityFreeCodeCamp.tomassaintavit.repl.co"]}}));
 
 let ninentyDaysInSeconds = 90*24*60*60;
 app.use(helmet.hsts({maxAge: ninentyDaysInSeconds, force: true}));
